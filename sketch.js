@@ -9,10 +9,11 @@ function setup() {
 function draw() {
   background(220);
   
-  for (let i = 0; i < cols; i++) {
-    for (let j = 0; j < rows; j++) {
-      let x = i * gridSize + gridSize/2
-      let y = j * gridSize + gridSize/2
+  // for (let i = 0; i < cols; i++) {
+  //   for (let j = 0; j < rows; j++) {
+  //     let x = i * gridSize + gridSize/2
+  //     let y = j * gridSize + gridSize/2
+    for (let i = 0; i < 10; i++) {
       circle(x, y, gridSize)
       // rectMode(CENTER)
       // rect(x, y, gridSize, gridSize)
@@ -23,4 +24,3 @@ function draw() {
     }
     
   }
-}
