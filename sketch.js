@@ -10,7 +10,7 @@ function draw() {
   background(220);
   
   
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < cols; i++) {
       let x= i * gridSize + gridSize/2
       let y =25
       circle(x, y, gridSize)
