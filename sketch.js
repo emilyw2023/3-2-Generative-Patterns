@@ -1,3 +1,4 @@
+
 let gridSize = 50
 let cols, rows
 function setup() {
@@ -8,13 +9,15 @@ function setup() {
 
 function draw() {
   background(220);
-  
+
   
     for (let i = 0; i < cols; i++) {
+    for (let j = 0; j < rows; j++) {
       let x= i * gridSize + gridSize/2
-      let y =25
+      let y = j * gridSize + gridSize/2
       circle(x, y, gridSize)
-      
+      line(x-gridSize/2, y+gridSize/2, x+gridSize/2, y-gridSize/2)
+      line(x-gridSize/2, y-gridSize/2, x+gridSize/2, y+gridSize/2)
     }
-    
   }
+}
